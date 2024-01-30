@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soccer Match Statistics</title>
+    <style>
+        <head>
+    <!-- ... other head elements ... -->
+    <style>
+        /* Base styles for mobile */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            padding: 20px;
+        }
+        form {
+            max-width: 100%;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            margin-top: 10px;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #34d399;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            opacity: 0.9;
+        }
+
+        /* Larger screens */
+        @media (min-width: 768px) {
+            body {
+                padding: 40px;
+            }
+            form {
+                max-width: 600px; /* Or your preferred max width */
+                padding: 40px;
+            }
+            label, input, select, button {
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+    </style>
+</head>
+<body>
+    <form id="statsForm">
+        <h2>Soccer Match Statistics</h2>
+
+<!-- Date of Match -->
+        <label for="matchDate">Date of Match</label>
+        <input id="matchDate" type="date">
+
+        <!-- Position Playing -->
+        <label for="positionPlaying">Position Playing</label>
+        <select id="positionPlaying">
+            <option>Goalie</option>
+            <option>Defender</option>
+            <option>Defensive Midfielder</option>
+            <option>Midfield</option>
+            <option>Attacking Midfielder</option>
+            <option>Attacking Wing</option>
+            <option>Forward/Striker</option>
+        </select>
+
+        <!-- Level of Play -->
+        <label for="levelOfPlay">Level of Play</label>
+        <select id="levelOfPlay">
+            <option>High School Varsity</option>
+            <option>High School JV</option>
+            <option>High School Freshmen</option>
+            <option>Club Level 3</option>
+            <option>Club Level 2</option>
+            <option>Club Level 1</option>
+            <option>Travel</option>
+            <option>Regional</option>
+            <option>National</option>
+            <option>International</option>
+        </select>
+
+        <!-- Player Year Group -->
+        <label for="playerYearGroup">Player Year Group</label>
+        <input id="playerYearGroup" type="text" placeholder="Enter Player Year Group">
+
+        <!-- Opponent Team Name -->
+        <label for="opponentTeam">Opponent Team Name</label>
+        <input id="opponentTeam" type="text" placeholder="Enter Opponent Team Name">
+        </select>
+
+<label for="opponentlevelOfPlay">Opponent Level of Play</label>
+        <select id="opponentlevelOfPlay">
+            <option>High School Varsity</option>
+            <option>High School JV</option>
+            <option>High School Freshmen</option>
+            <option>Club Level 3</option>
+            <option>Club Level 2</option>
+            <option>Club Level 1</option>
+            <option>Travel</option>
+            <option>Regional</option>
+            <option>National</option>
+            <option>International</option>
+        </select>
+
+        <!-- Opponent Year Group -->
+        <label for="opponentYearGroup">Opponent Year Group</label>
+        <input id="opponentYearGroup" type="text" placeholder="Enter Opponent Year Group">
+
+        <!-- Goals Scored -->
+        <label for="goalsScored">Goals Scored</label>
+        <input id="goalsScored" type="number" min="0">
+
+        <!-- Assists -->
+        <label for="assists">Assists</label>
+        <input id="assists" type="number" min="0">
+
+        <!-- Shots -->
+        <label for="shots">Shots</label>
+        <input id="shots" type="number" min="0">
+
+        <!-- Shots on Target -->
+        <label for="shotsOnTarget">Shots on Target</label>
+        <input id="shotsOnTarget" type="number" min="0">
+
+        <!-- Tackles -->
+        <label for="tackles">Tackles</label>
+        <input id="tackles" type="number" min="0">
+
+        <!-- Interceptions -->
+        <label for="interceptions">Interceptions</label>
+        <input id="interceptions" type="number" min="0">
+
+        <!-- Clearances -->
+        <label for="clearances">Clearances</label>
+        <input id="clearances" type="number" min="0">
+
+        <!-- Fouls Suffered -->
+        <label for="foulsSuffered">Fouls Suffered</label>
+        <input id="foulsSuffered" type="number" min="0">
+
+        <!-- Saves (For Goalkeepers) -->
+        <label for="saves">Saves (For Goalkeepers)</label>
+        <input id="saves" type="number" min="0">
+
+        <!-- Aerial Duels Won -->
+        <label for="aerialDuelsWon">Aerial Duels Won</label>
+        <input id="aerialDuelsWon" type="number" min="0">
+
+        <!-- Minutes Played -->
+        <label for="minutesPlayed">Minutes Played</label>
+        <input id="minutesPlayed" type="number" min="0">
+
+        <!-- Distance Covered (km) -->
+        <label for="distanceCovered">Distance Covered (km)</label>
+        <input id="distanceCovered" type="number" min="0" step="0.01">
+
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+    </form>
+</body>
+</html>
